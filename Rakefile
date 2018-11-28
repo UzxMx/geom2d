@@ -50,7 +50,7 @@ namespace :dev do
     s.files = PKG_FILES.to_a
 
     s.require_path = 'lib'
-    s.required_ruby_version = '>= 2.4'
+    s.required_ruby_version = '>= 2.2.9'
     s.add_development_dependency('rubocop', '~> 0.58', '>= 0.58.2')
 
     s.author = 'Thomas Leitner'
@@ -74,7 +74,7 @@ namespace :dev do
 
   desc "Insert/Update copyright notice"
   task :update_copyright do
-    statement = <<~STATEMENT
+    statement = <<-STATEMENT
       #--
       # geom2d - 2D Geometric Objects and Algorithms
       # Copyright (C) 2018 Thomas Leitner <t_leitner@gmx.at>

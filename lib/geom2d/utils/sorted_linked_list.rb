@@ -141,7 +141,9 @@ module Geom2D
 
       # Deletes the node with the given value from the list and returns its value.
       def delete(value)
-        find_node(value)&.delete
+        if node = find_node(value)
+          node.delete
+        end
       end
 
       def inspect #:nodoc:
